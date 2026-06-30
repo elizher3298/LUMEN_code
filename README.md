@@ -152,17 +152,29 @@ output directory.
 
 ## Citation
 
-> Joh, Y., ... , Kim, K. S. *LUMEN: <title>.* Computers and Electronics in
-> Agriculture (under review).
+> Joh, Y., ..., Kim, K. S. *LUMEN: A Shallow Neural Network Model to Estimate Daily Solar Radiation Using Low-Cost Edge Devices.* Computers and Electronics in Agriculture (under review).
 
-Fill in the full author list and title before release.
-
-## Funding
-
-Supported by the Rural Development Administration (RDA), Republic of Korea,
-under projects RS-2025-02232989 and PJ015620022021 (Cooperative Research
-Program for Agriculture Science & Technology Development).
 
 ## License
 
-Add a license file (e.g., MIT) and state it here before publishing.
+MIT License
+
+Copyright (c) 2026 Youngsang Joh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
