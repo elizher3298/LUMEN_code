@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+.ipynb_checkpoints/
+*.backup_*
+
+# Generated outputs
+results/*
+!results/.gitkeep

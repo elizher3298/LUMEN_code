@@ -1,0 +1,13 @@
+id,features,normalization,target
+exp_norm_raw,himawari_srad agera5_srad agera5_tmax agera5_dtr agera5_prec solar_angle,minmax,srad
+exp1,himawari_srad agera5_srad agera5_tmax agera5_tmin agera5_prec,standard,srad
+exp2,himawari_srad_norm agera5_srad_norm agera5_tmax agera5_tmin agera5_prec,standard,srad_norm
+exp3,himawari_clearness agera5_clearness agera5_tmax agera5_tmin agera5_prec,minmax,srad_clearness
+exp4,himawari_clearness agera5_clearness agera5_tmax agera5_tmin agera5_prec,minmax,srad_clearness
+exp5,himawari_clearness agera5_clearness agera5_tmax agera5_dtr agera5_prec solar_angle,minmax,srad_clearness
+exp6,himawari_srad theoretical agera5_srad agera5_tmax agera5_dtr agera5_prec solar_angle,minmax,srad
+exp7,himawari_srad_norm agera5_srad_norm,standard,srad_norm
+exp8,himawari_srad agera5_srad agera5_tmax agera5_tmin agera5_prec lat alt,standard,srad
+exp9,himawari_clearness agera5_clearness agera5_tmax agera5_dtr agera5_prec solar_angle,minmax,srad_clearness
+exp10,himawari_srad_norm agera5_srad_norm agera5_dtr agera5_prec_sqrt,standard,srad_norm
+exp11,himawari_srad_norm agera5_srad_norm solar_angle agera5_tmax agera5_tmin agera5_prec lat alt dist_to_coast_km,standard,srad_norm

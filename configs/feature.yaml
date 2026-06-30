@@ -1,0 +1,75 @@
+# Feature definitions for LUMEN model
+# Only defines how features are calculated, not which combinations to use
+
+# Raw features - directly from data columns
+raw_features:
+  - himawari_srad
+  - agera5_srad
+  - agera5_tmin
+  - agera5_tmax
+  - agera5_prec
+  - theoretical
+  - srad
+  - lat
+  - alt
+  - dist_to_coast_km
+
+# Derived features - calculated from raw features
+derived_features:
+  # Normalized radiation features (clearness index)
+  himawari_clearness:
+    type: ratio
+    numerator: himawari_srad
+    denominator: theoretical
+    
+  agera5_clearness:
+    type: ratio
+    numerator: agera5_srad
+    denominator: theoretical
+  
+  # Solar angle based on date and location
+  solar_angle:
+    type: calculated
+    method: solar_position
+    
+  # Temperature range (diurnal temperature range)
+  agera5_dtr:
+    type: difference
+    minuend: agera5_tmax
+    subtrahend: agera5_tmin
+    
+  # Precipitation normalized (could be useful)
+  agera5_prec_sqrt:
+    type: transform
+    source: agera5_prec
+    method: sqrt
+    
+  # Bias features (for bias correction experiments)
+  himawari_bias:
+    type: difference
+    minuend: himawari_srad
+    subtrahend: srad
+    
+  agera5_bias:
+    type: difference  
+    minuend: agera5_srad
+    subtrahend: srad
+
+# Target variable definitions
+targets:
+  # Direct radiation (MJ/m²/day)
+  srad:
+    type: raw
+    column: srad
+    
+  # Normalized radiation (clearness index, 0-1)
+  srad_clearness:
+    type: ratio
+    numerator: srad
+    denominator: theoretical
+    
+  # Log-transformed radiation (for certain models)
+  srad_log:
+    type: transform
+    source: srad
+    method: log1p
